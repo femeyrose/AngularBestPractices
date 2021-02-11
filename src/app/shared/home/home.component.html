@@ -1,0 +1,26 @@
+
+ <div class="card-body">
+    <h4 class="card-title">Person Details</h4>
+    
+    
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Age</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let per of person; trackBy:trackPerson">
+          <td>{{per.id}}</td>  
+          <td>{{per.firstName}}</td>
+          <td>{{per.lastName}}</td>
+          <td>{{per.age}}</td>
+          <td>{{per.email}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
